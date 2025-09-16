@@ -1,0 +1,67 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6em;
+}
+.nav{
+    text-align: center;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    height: 100%;
+    margin-top: 50px;
+}
+@media only screen and (max-width:768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.price-card {
+    display: grid;
+    background-color: #242424;
+    grid-template-rows: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 80vh;
+    padding: 10px;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+@media only screen and (max-width:768px) {
+    .price-card {
+        min-width: 300px;
+    }
+}
+.price-card:hover{
+    transform: scale(1.06);
+}
+.price-card .title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #c4b1d4;
+}
+.price-card:nth-child(2){
+    background-color: #9d453c;
+}
+.price-card .price{
+    color: white;
+    font-size: 24px;
+}
+.feature ul li {
+    font-size: 16px;
+    color: white;
+}
+button {
+    background-color: #a5b19e;
+    padding: 20px;
+    border-radius: 40px;
+    width: 100%;
+    font-size: 16px;
+}
